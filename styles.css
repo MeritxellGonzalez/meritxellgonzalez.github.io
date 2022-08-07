@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    height: 100%;
+
+}
+
+
+body {
+    background-color: #C2BFBF;
+    min-height: 100%;
+}
+
+
+header {
+    background-color: black;
+    padding-bottom: 65px;
+    max-width: 100%;
+    max-height: auto;
+}
+
+header>p {
+    margin: 0;
+
+
+}
+
+.container-name {
+
+    padding-right: 10%;
+    padding-top: 40px;
+    margin-left: 10%;
+    text-align: center;
+
+
+}
+
+
+
+.container-name>h1 {
+    color: #f5f5f5;
+    padding-top: 10px;
+    font-size: 70px;
+    animation: neon 5s infinite;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.5em;
+
+}
+
+
+
+@keyframes neon {
+
+    0%,
+    39%,
+    41%,
+    59%,
+    61%,
+    100% {
+        text-shadow:
+            white 0 0 12px,
+            #624cdf 0 0 24px,
+            #624cdf 0 0 36px;
+
+    }
+
+    40%,
+    60% {
+        text-shadow: none;
+    }
+
+}
+
+
+
+.container-name>h3 {
+    margin-top: 1%;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    columns: 100% auto;
+}
+
+aside {
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #C2BFBF;
+
+
+}
+
+.about-me>p {
+    text-align: justify;
+    font-family: 'Special Elite', cursive;
+    font-style: bold;
+    columns: 100% auto;
+}
+
+.btn-cv {
+    padding-top: 10px;
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #212121;
+    background: linear-gradient rgba(25, 25, 25, 0.11),
+        rgba(60, 60, 60, 0.082);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    margin-top: 15px;
+    columns: 100% auto;
+
+}
+
+.cv svg {
+    margin-right: 8px;
+    columns: 100% auto;
+}
+
+.cv:hover {
+    columns: 100% auto;
+}
+
+.cv:active {
+
+    columns: 100% auto;
+}
+
+h5 {
+    padding-top: 7%;
+    font-size: 35px;
+    font-family: 'Staatliches', cursive;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 0.5em;
+    align-items: center;
+    margin: 0;
+    columns: 100% auto;
+    margin-bottom: 12px;
+    padding-bottom: 31px;
+}
+
+section {
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 15%;
+    justify-content: center;
+    background-color: #C2BFBF;
+    display: grid;
+    grid-template:
+        "sistemas bbdd lprogramacion" 170px "lmarcas webyfw cversiones" 170px
+    ;
+    column-gap: 50px;
+    row-gap: 100px;
+}
+
+.sistemas-informaticos {
+    grid-area: sistemas;
+
+}
+
+.bbdd {
+    grid-area: bbdd;
+
+}
+
+.lenguaje-de-programacion {
+    grid-area: lprogramacion;
+
+}
+
+.lenguaje-de-marcas {
+    grid-area: lmarcas;
+
+}
+
+.web-y-fw {
+    grid-area: webyfw;
+
+}
+
+.control-versiones {
+    grid-area: cversiones;
+
+}
+
+/*INICIO CARD SISTEMAS-INFORMATICOS*/
+.sistemas-informaticos {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: visible;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+}
+
+.sistemas-informaticos:hover {
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+
+}
+
+.sistemas-informaticos .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+
+
+}
+
+.sistemas-informaticos .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.sistemas-informaticos:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.sistemas-informaticos:hover .sistemas-informaticos .header .title {
+    padding: 0;
+}
+
+.sistemas-informaticos .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+
+}
+
+.sistemas-informaticos .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+
+
+}
+
+
+.sistemas-informaticos li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+}
+
+.sistemas-informaticos ul {
+    margin-bottom: 33%;
+}
+
+/*FIN CARD SISTEMAS */
+/*INICIO CARD BBDD */
+.bbdd {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: visible;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+
+}
+
+.bbdd:hover {
+
+
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+
+}
+
+.bbdd .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+
+
+}
+
+.bbdd .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.bbdd:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+
+}
+
+.bbdd:hover .bbdd .header .title {
+    padding: 0;
+
+
+}
+
+.bbdd .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+}
+
+.bbdd .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+    overflow: visible;
+}
+
+
+.bbdd li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+
+}
+
+.bbdd ul {
+    margin-bottom: 7%;
+}
+
+/*FIN CARD BBDD */
+/*INICIO CARD LENG PROGRAMACIÓN */
+.lenguaje-de-programacion {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    background-color: #212121;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+.lenguaje-de-programacion:hover {
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+}
+
+.lenguaje-de-programacion .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+}
+
+.lenguaje-de-programacion .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.lenguaje-de-programacion:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+
+}
+
+.lenguaje-de-programacion:hover .lenguaje-de-programacion .header .title {
+    padding: 0;
+
+
+}
+
+.lenguaje-de-programacion .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+}
+
+.lenguaje-de-programacion .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+
+}
+
+
+.lenguaje-de-programacion ul li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+
+}
+
+/*FIN CARD LENGUAJE PROGRAMACION */
+/*INCIO CARD LENGUAJE DE MARCAS */
+.lenguaje-de-marcas {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: visible;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+}
+
+.lenguaje-de-marcas:hover {
+
+
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+
+
+}
+
+.lenguaje-de-marcas .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+
+
+}
+
+.lenguaje-de-marcas .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.lenguaje-de-marcas:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+
+}
+
+.lenguaje-de-marcas:hover .lenguaje-de-marcas .header .title {
+    padding: 0;
+
+
+}
+
+.lenguaje-de-marcas .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+}
+
+.lenguaje-de-marcas .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+    overflow: visible;
+
+}
+
+
+.lenguaje-de-marcas li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+}
+
+/*FIN CARD LENGUAJE DE MARCAS */
+/*INCIO CARD WEB Y FW */
+
+.web-y-fw {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: visible;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+.web-y-fw:hover {
+
+
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+
+}
+
+.web-y-fw .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+
+
+}
+
+.web-y-fw .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.web-y-fw:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+
+}
+
+.web-y-fw:hover .web-y-fw .header .title {
+    padding: 0;
+
+
+}
+
+.web-y-fw .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+}
+
+.web-y-fw .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+    overflow: visible;
+}
+
+
+.web-y-fw li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+
+}
+
+/*FIN CARD WEB Y FW */
+/*INICIO CARD CONTROL DE VERSIONES */
+.control-versiones {
+    width: 290px;
+    height: 220px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: visible;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+}
+
+.control-versiones:hover {
+
+
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    border-radius: 0 0 0 0;
+
+}
+
+.control-versiones .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+
+
+}
+
+.control-versiones .header .title {
+    font-size: 0.95em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.control-versiones:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+
+
+}
+
+.control-versiones:hover .control-versiones .header .title {
+    padding: 0;
+
+
+}
+
+.control-versiones .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+
+
+}
+
+.control-versiones .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'Special Elite', cursive;
+    overflow: visible;
+}
+
+
+.control-versiones li {
+    font-family: 'Special Elite', cursive;
+    margin-left: 13px;
+    margin-bottom: 55%;
+}
+
+/*FIN CARD CONTROL DE VERSIONES */
+
+
+footer {
+    margin-top: 2%;
+    background-color: black;
+    padding: 3%;
+    justify-content: center;
+
+
+
+}
+
+.botton-ft {
+    display: inline-block;
+    height: auto;
+    width: 25px;
+    background-color: #f5f5f5;
+    justify-content: center;
+}
+
+.button-footer {
+    text-align: center;
+    border-radius: 100% 100% 100% 100%;
+    columns: 100% auto;
+
+
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #f3f3f3;
+    columns: 100% auto;
+
+}
+
+
+
+@media screen and (min-width:200px) {
+    section {
+        grid-template:
+            "sistemas""bbdd""lprogramacion""lmarcas""webyfw""cversiones";
+        justify-content: center;
+    }
+
+    .container-name>h1 {
+
+        font-size: 40px;
+        text-align: center;
+        animation: neon 5s infinite;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 0.5em;
+
+    }
+
+
+
+    @keyframes neon {
+
+        0%,
+        39%,
+        41%,
+        59%,
+        61%,
+        100% {
+            text-shadow:
+                white 0 0 12px,
+                #624cdf 0 0 24px,
+                #624cdf 0 0 36px;
+
+        }
+
+        40%,
+        60% {
+            text-shadow: none;
+        }
+
+    }
+
+    .container-name>h3 {
+        margin-top: 1%;
+        color: #f5f5f5;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Press Start 2P', cursive;
+        columns: 100% auto;
+    }
+
+    h5 {
+        padding-top: 10%;
+        font-size: 25px;
+        font-family: 'Staatliches', cursive;
+        color: #212121;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        columns: 100% auto;
+        margin-bottom: 6px;
+        padding-bottom: 10px;
+    }
+
+    .sistemas-informaticos {
+        margin-left: 15px;
+    }
+
+    .bbdd {
+        margin-left: 15px;
+    }
+
+    .lenguaje-de-programacion {
+        margin-left: 15px;
+    }
+
+    .lenguaje-de-marcas {
+        margin-left: 15px;
+    }
+
+    .web-y-fw {
+        margin-left: 15px;
+    }
+
+    .control-versiones {
+        margin-left: 15px;
+    }
+
+    .sistemas-informaticos .header .title {
+        font-size: 0.75em;
+    }
+
+    .bbdd .header .title {
+        font-size: 0.75em;
+    }
+
+    .lenguaje-de-programacion .header .title {
+        font-size: 0.75em;
+    }
+
+    .lenguaje-de-marcas .header .title {
+        font-size: 0.75em;
+    }
+
+    .web-y-fw .header .title {
+        font-size: 0.75em;
+    }
+
+    .control-versiones .header .title {
+        font-size: 0.75em;
+
+
+    }
+
+}
+
+@media screen and (min-width:780px) {
+    section {
+        grid-template:
+            "sistemas bbdd""lprogramacion lmarcas""webyfw cversiones";
+    }
+
+    .container-name>h1 {
+
+        font-size: 60px;
+        text-align: center;
+        animation: neon 5s infinite;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 0.5em;
+
+    }
+
+
+
+    @keyframes neon {
+
+        0%,
+        39%,
+        41%,
+        59%,
+        61%,
+        100% {
+            text-shadow:
+                white 0 0 12px,
+                #624cdf 0 0 24px,
+                #624cdf 0 0 36px;
+
+        }
+
+        40%,
+        60% {
+            text-shadow: none;
+        }
+
+    }
+
+    .container-name>h3 {
+        margin-top: 1%;
+        color: #f5f5f5;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Press Start 2P', cursive;
+        columns: 100% auto;
+    }
+}
+
+@media screen and (min-width:900px) {
+    section {
+        grid-template:
+            "sistemas bbdd""lprogramacion lmarcas""webyfw cversiones";
+    }
+
+}
